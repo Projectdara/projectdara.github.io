@@ -1,4 +1,24 @@
 <html>
-  <h1>Hola soy Diego!</h1>
-  <a href="https://github.com/Projectdara">Visitar mi GitHub</a>
+  <head>
+    <title>Diego Rodrigez | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hola soy Diego!</h1>
+    <a href="https://github.com/Projectdara">Visitar mi GitHub</a>
+    <br />
+    <span id="number">0</span>
+    <button id="mi-boton">Agregar 1</button>
+    <script>
+      const boton = document.getElementById('mi-boton');
+
+      boton.addEventListener('click', function() {
+        const numeroElemento = document.getElementById('number');
+        const valorActual = Number(numeroElemento.innerText);
+        const siguienteValor = valorActual + 1;
+
+        numeroElemento.innerText = siguienteValor;
+      });
+    </script>
+  </body>
 </html>
